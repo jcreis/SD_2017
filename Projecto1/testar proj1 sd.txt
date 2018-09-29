@@ -1,0 +1,2 @@
+./test-sd1.sh -cp java -image sd-work-joao -test 1 -log ALL
+

@@ -1,0 +1,7 @@
+Correr Cliente: docker run -it sd17-t2-joao java -cp /home/sd/* -Djavax.net.ssl.trustStore=/home/sd/client-base.jks -Djavax.net.ssl.trustStorePassword=changeit proxy.server.ProxyClient
+
+Correr Servidor: docker run -p 8081:8081 sd17-t2-joao java -cp /home/sd/* -Djavax.net.ssl.keyStore=/home/sd/server.jks -Djavax.net.ssl.keyStorePassword=salada proxy.server.ProxyServer
+
+testar o tester: ./test2.sh -image sd17-t2-joao -test 1 -log ALL
+
+por external services a correr: sh thirdpartyservices_toolbox.sh
